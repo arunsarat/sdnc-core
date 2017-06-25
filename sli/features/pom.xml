@@ -32,7 +32,7 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.opendaylight.mdsal</groupId>
+			<groupId>org.opendaylight.controller</groupId>
 			<artifactId>features-mdsal</artifactId>
 			<version>${odl.mdsal.features.version}</version>
 			<classifier>features</classifier>

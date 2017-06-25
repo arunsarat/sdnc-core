@@ -26,19 +26,12 @@
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.opendaylight.mdsal</groupId>
+			<groupId>org.opendaylight.controller</groupId>
 			<artifactId>features-mdsal</artifactId>
 			<version>${odl.mdsal.features.version}</version>
 			<classifier>features</classifier>
 			<type>xml</type>
 			<scope>runtime</scope>
-		</dependency>
-		<!-- dependency for opendaylight-karaf-empty for use by testing -->
-		<dependency>
-			<groupId>org.opendaylight.odlparent</groupId>
-			<artifactId>opendaylight-karaf-empty</artifactId>
-			<version>${odl.karaf.empty.distro.version}</version>
-			<type>zip</type>
 		</dependency>
 		<dependency>
 			<!-- Required for launching the feature tests -->

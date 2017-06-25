@@ -8,7 +8,7 @@
 	</parent>
 	<artifactId>sliapi-provider</artifactId>
 	<packaging>bundle</packaging>
-
+        
 	<build>
 		<plugins>
 			<plugin>
@@ -52,7 +52,7 @@
 				</executions>
 				<dependencies>
 					<dependency>
-						<groupId>org.opendaylight.mdsal</groupId>
+						<groupId>org.opendaylight.yangtools</groupId>
 						<artifactId>maven-sal-api-gen-plugin</artifactId>
 						<version>${odl.sal.api.gen.plugin.version}</version>
 						<type>jar</type>
@@ -106,19 +106,21 @@
 			<artifactId>sal-binding-config</artifactId>
 			<version>${odl.mdsal.version}</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.opendaylight.controller</groupId>
 			<artifactId>sal-binding-api</artifactId>
 			<version>${odl.mdsal.version}</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.opendaylight.controller</groupId>
 			<artifactId>sal-common-util</artifactId>
 			<version>${odl.mdsal.version}</version>
 		</dependency>
-
+		<dependency>
+			<groupId>org.opendaylight.controller</groupId>
+			<artifactId>sal-binding-broker-impl</artifactId>
+			<version>${odl.mdsal.version}</version>
+	    	</dependency>
 
 		<dependency>
 			<groupId>org.openecomp.sdnc.core</groupId>

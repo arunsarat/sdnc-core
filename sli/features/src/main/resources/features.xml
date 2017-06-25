@@ -23,7 +23,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.2.0 http://karaf.apache.org/xmlns/features/v1.2.0">
 
-    <repository>mvn:org.opendaylight.mdsal/features-mdsal/${odl.mdsal.features.version}/xml/features</repository>
+    <repository>mvn:org.opendaylight.controller/features-mdsal/${odl.mdsal.features.version}/xml/features</repository>
 
 
     <feature name='sdnc-sli' description="sdnc-sli" version='${project.version}'>

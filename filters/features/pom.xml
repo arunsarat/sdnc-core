@@ -12,24 +12,11 @@
 	<packaging>jar</packaging>
 
 	<dependencies>
-
-
 		<dependency>
 			<groupId>org.openecomp.sdnc.core</groupId>
 			<artifactId>filters-provider</artifactId>
 			<version>${project.version}</version>
 		</dependency>
-<!--
-		<dependency>
-			<groupId>org.opendaylight.mdsal</groupId>
-			<artifactId>features-mdsal</artifactId>
-			<version>${odl.mdsal.version}</version>
-			<classifier>features</classifier>
-			<type>xml</type>
-
-			<scope>runtime</scope>
-		</dependency>
--->
 	</dependencies>
 
 	<build>
@@ -53,27 +40,6 @@
 					</execution>
 				</executions>
 			</plugin>
-					<!-- launches the feature test, which validates that your karaf feature
-					can be installed inside of a karaf container. It doesn't validate that your
-					functionality works correctly, just that you have all of the dependent bundles
-					defined correctly.
-			<plugin>
-
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.16</version>
-				<configuration>
-					<systemPropertyVariables>
-						<karaf.distro.groupId>org.opendaylight.odlparent</karaf.distro.groupId>
-						<karaf.distro.artifactId>opendaylight-karaf-empty</karaf.distro.artifactId>
-						<karaf.distro.version>${odl.karaf.empty.distro.version}</karaf.distro.version>
-					</systemPropertyVariables>
-					<dependenciesToScan>
-						<dependency>org.opendaylight.yangtools:features-test</dependency>
-					</dependenciesToScan>
-				</configuration>
-			</plugin>
-			-->
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>build-helper-maven-plugin</artifactId>
